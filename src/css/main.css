@@ -218,3 +218,32 @@ button {
 .picker_wrapper .picker_splotch.picker_splotch_active {
     border: 2px dotted yellow;
 }
+
+.btn-default {
+    /* font-size: x-small;
+    margin: 0px 0px; 
+    background: #03a9f4; 
+    padding: 1px; 
+    margin-top: 1px; 
+    color: white;
+    border-radius: 2px 2px 2px 2px; */
+    align-items: center;
+    background-color: rgba(0, 158, 250, 0.815);
+    border: 1px solid #06f;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: x-small;
+    justify-content: center;
+    letter-spacing: -0.8px;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}

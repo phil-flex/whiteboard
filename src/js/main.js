@@ -27,14 +27,15 @@ if (!whiteboardId) {
     //whiteboardId = "myNewWhiteboard";
     //const date = +new Date();
     //whiteboardId = uuidv4();
+    let uuid = uuidv4();
     let today = new Date();
-    let dd = String(today.getDate()).padStart(2,'0');
-    let mm = String(today.getMonth()+1).padStart(2,'0');
+    let dd = String(today.getDate()).padStart(2, "0");
+    let mm = String(today.getMonth() + 1).padStart(2, "0");
     let yyyy = String(today.getFullYear());
-    let HH = String(today.getHours()).padStart(2,'0');
-    let MM = String(today.getMinutes()).padStart(2,'0');
+    let HH = String(today.getHours()).padStart(2, "0");
+    let MM = String(today.getMinutes()).padStart(2, "0");
     //whiteboardId = today.toISOString().split('T')[0]+"_"+HH+MM; //.split('T')[0]
-    whiteboardId = yyyy+mm+dd+"-"+HH+MM; //.split('T')[0]
+    whiteboardId = yyyy + mm + dd + "-" + HH + MM + "-" + uuid.substring(0, 6); //.split('T')[0]
     whiteboard = whiteboardId;
 }
 

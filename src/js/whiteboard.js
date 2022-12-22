@@ -393,9 +393,9 @@ const whiteboard = {
                 const imgDiv = $(
                     `<div class="dragMe" style="position:absolute; left: ${left}px; top: ${top}px; width: ${width}px; border: 2px dotted gray; overflow: hidden; height: ${height}px;" cursor:move;">
                     <canvas style="cursor:move; position:absolute; top:0px; left:0px;" width="${width}" height="${height}"></canvas>
-                    <div style="position:absolute; right:5px; top:3px;">
-                    <button draw="1" style="margin: 0px 0px; background: #03a9f4; padding: 5px; margin-top: 3px; color: white;" class="addToCanvasBtn btn btn-default">Drop</button>
-                    <button style="margin: 0px 0px; background: #03a9f4; padding: 5px; margin-top: 3px; color: white;" class="xCanvasBtn btn btn-default">x</button>
+                    <div style="position:absolute; right:0px; top:0px;display: inline-block; white-space: nowrap;">
+                    <button draw="1" class="addToCanvasBtn btn btn-default">✔️</button>
+                    <button class="xCanvasBtn btn btn-default">❌</button>
                     </div>
                     </div>`
                 );
@@ -896,10 +896,10 @@ const whiteboard = {
         _this.mouseOverlay.css({ cursor: "default" });
         var imgDiv = $(
             '<div class="dragMe" style="border: 2px dashed gray; position:absolute; left:200px; top:200px; min-width:160px; min-height:100px; cursor:move;">' +
-                '<div style="position:absolute; right:5px; top:3px;">' +
-                '<button draw="1" style="margin: 0px 0px; background: #03a9f4; padding: 5px; margin-top: 3px; color: white;" class="addToCanvasBtn btn btn-default">Draw to canvas</button> ' +
-                '<button draw="0" style="margin: 0px 0px; background: #03a9f4; padding: 5px; margin-top: 3px; color: white;" class="addToBackgroundBtn btn btn-default">Add to background</button> ' +
-                '<button style="margin: 0px 0px; background: #03a9f4; padding: 5px; margin-top: 3px; color: white;" class="xCanvasBtn btn btn-default">x</button>' +
+                '<div style="position:absolute; right:0px; top:0px; display: inline-block; white-space: nowrap;">' +
+                '<button draw="1" class="addToCanvasBtn btn btn-default">🔝Draw to canvas</button> ' +
+                '<button draw="0" class="addToBackgroundBtn btn btn-default">⬇️Add to background</button> ' +
+                '<button class="xCanvasBtn btn btn-default">❌</button>' +
                 "</div>" +
                 '<i style="position:absolute; bottom: -4px; right: 2px; font-size: 2em; color: gray; transform: rotate(-45deg);" class="fas fa-sort-down" aria-hidden="true"></i>' +
                 '<div class="rotationHandle" style="position:absolute; bottom: -30px; left: 0px; width:100%; text-align:center; cursor:ew-resize;"><i class="fa fa-undo"></i></div>' +
