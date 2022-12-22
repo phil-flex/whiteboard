@@ -247,3 +247,31 @@ button {
     -webkit-user-select: none;
     touch-action: manipulation;
 }
+
+.stickyNote {
+    scrollbar-width: thin;
+}
+
+.stickyNote::-webkit-scrollbar {
+    width: 2px;
+}
+
+.stickyNote::-webkit-scrollbar-track {
+    background: rgb(179, 179, 177);
+    border-radius: 2px;
+}
+
+.stickyNote::-webkit-scrollbar-thumb {
+    background: rgb(248, 248, 248);
+    border-radius: 2px;
+}
+
+.stickyNote::-webkit-scrollbar-thumb:hover {
+    background: rgb(211, 211, 211);
+    border-radius: 2px;
+}
+
+.stickyNote::-webkit-scrollbar-thumb:active {
+    background: rgb(151, 151, 151);
+    border-radius: 2px;
+}
